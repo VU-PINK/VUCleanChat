@@ -4,7 +4,7 @@ print('getting Ban-List')
 BannedWords = {
   ["test"]=true,
   ["banned"]=true,
-  ["bad"]=true,
+  ["BF5"]=true,
 }
 
 return 'Ban-List loaded'
