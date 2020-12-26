@@ -1,6 +1,3 @@
----require '__shared/common'
----print('getting Server')
-
 local CleanChat = class('CleanChat')
 
 --Initialize
@@ -10,7 +7,7 @@ function CleanChat:__init()
     print('VU Clean Chat Server initializing')
     print('Version:')
     print(MyModVersion)
-    local RequireBanList = require 'banned.lua'
+    local RequireBanList = require 'banned'
     if RequireBanList=='Ban-List loaded' then
       print(RequireBanList)
       print('VU Clean Chat Server ready!')
@@ -27,11 +24,10 @@ end
 Events:Subscribe('Player:Chat', function(player, recipientMask, message)
     print('Message analyzed')
     if BannedWords[message] then
-    function BannedWordDetected()
-      print('Banned Word Detected')
-      print('add Warning/Kick function here')
-      ChatManager:SendMessage("Keep the Chat clean!")
-      return true
+      function BannedWordDetected()
+        print('Banned Word Detected')
+        print('add Warning/Kick function here')
+        NetEvents:Broadcast('CleanChat', 'Word is Banned')
       end
     BannedWordDetected()
     end
