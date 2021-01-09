@@ -2,9 +2,9 @@
 print('getting Ban-List')
 
 BannedWords = {
-  ["test"],
-  ["banned"],
-  ["BF5"],
+  ["test"]=true,
+  ["banned"]=true,
+  ["BF5"]=true,
 }
 
 
