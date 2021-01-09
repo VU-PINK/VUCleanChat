@@ -23,17 +23,16 @@ end
 --Analyze Messages [WIP]
 Events:Subscribe('Player:Chat', function(player, recipientMask, message)
     print('Message analyzed')
-    if BannedWords[message] then
+    if string.find(message, table.concat(BannedWords, ' ')) then
       function BannedWordDetected()
         print('Banned Word Detected')
         print('add Warning/Kick function here')
-        NetEvents:Broadcast('CleanChat', 'Word is Banned')
+        NetEvents:Broadcast('CleanChat', 'Word is Banned, player')
       end
     BannedWordDetected()
     end
 end)
 
---Get BadUser [TODO]
 
 --Run
 CleanChat:__init()
