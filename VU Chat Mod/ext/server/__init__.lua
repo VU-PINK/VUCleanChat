@@ -23,11 +23,12 @@ end
 --Analyze Messages [WIP]
 Events:Subscribe('Player:Chat', function(player, recipientMask, message)
     print('Message analyzed')
-    if string.find(table.concat(BannedWords, ' '), message ) then
+    messagelowered = string.lower(message)
+    if string.find(table.concat(BannedWords, ' '), messagelowered ) then
       function BannedWordDetected()
         print('Banned Word Detected')
         print('add Warning/Kick function here')
-        NetEvents:Broadcast('CleanChat', 'Word is Banned,')
+        NetEvents:Broadcast('CleanChat', 'Word is Banned')
         print(player)
       end
     BannedWordDetected()
