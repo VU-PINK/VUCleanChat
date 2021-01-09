@@ -21,7 +21,7 @@ NetEvents:Subscribe('CleanChat', function(data)
         if data=='Word is Banned' then
           hookCtx:Pass('[deleted]', channelId, playerId, recipientMask, isSenderDead)
           function reset()
-            if data=='Word is Banned' then
+            if data==('Word is Banned') then
               data = 'reset'
             end
           end
