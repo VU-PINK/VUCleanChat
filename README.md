@@ -10,7 +10,10 @@ Add your banned words here, don´t forget to add a comma between words:
 banned = {
 
 "bannedword1",
-"bannedword2"
+"bannedword2",
+.
+.
+.
 
 }
 
@@ -19,6 +22,9 @@ Words in instantkick{} will lead to instant kick duh:
 instantkick = {
 
 "word"
+.
+.
+.
 
 }
 
