@@ -3,7 +3,7 @@ A mod to keep the VU servers/chats clean of bad language
 
 Edit banned words in /ext/server/banned.lua
 
-Change maximum warnings in /ext/server/_ _init_ _.lua
+Change maximum warnings in /ext/server/init.lua
 
 ## How it works:
 
