@@ -5,7 +5,7 @@ Edit banned words in /ext/server/banned.lua
 
 ## How it works:
 
-Add your banned words here, don´t forget to add a comma between words:
+Add your banned words into the table, don´t forget to add a comma between words:
 
 banned = {
 
