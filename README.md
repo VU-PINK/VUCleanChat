@@ -30,3 +30,8 @@ instantkick = {
 
 }
 
+
+Disclaimer:
+Words in banned.lua are to prevent abuse of these words not support them.
+No Offense intended.
+
