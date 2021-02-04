@@ -21,7 +21,7 @@ Words in instantkick{} will lead to instant kick duh:
 
 instantkick = {
 
-"word"
+"word",
 .
 .
 .
