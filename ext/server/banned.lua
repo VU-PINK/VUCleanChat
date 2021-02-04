@@ -1,17 +1,14 @@
 banned = {
 
 "bf5",
-"gay"
+"word2"
 
 }
 
 
 instantkick = {
 
-"nigger",
-"niggers",
-"n1gger",
-"n1gg3r",
-"negro",
+"word1",
+"word2"
 
 }
