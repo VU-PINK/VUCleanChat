@@ -1,9 +1,0 @@
-{
-    "Name": "VU Clean Chat",
-    "Description": "by IllustrisJack",
-    "Version": "0.0.1",
-    "HasVeniceEXT": true,
-    "Dependencies": {
-        "veniceext": "^1.0.0"
-    }
-}
