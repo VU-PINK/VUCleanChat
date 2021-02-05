@@ -23,7 +23,6 @@ end)
 
 
 -- Kick Player
-
 NetEvents:Subscribe("Kick", function(Player)
 
   print("Kicked Player: " .. Player.name .. " ; Reason: Bad Chat")

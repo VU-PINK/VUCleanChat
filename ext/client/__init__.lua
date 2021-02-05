@@ -10,7 +10,7 @@ function Warning:__init()
   self.warnings = 0
 end
 
-function Warning:AddOne(reallybad)
+function Warning:AddOne()
   self.warnings = self.warnings + 1
   print("Received " .. self.warnings .. " of " .. maxwarnings .. " Chat Warnings")
   ChatManager:SendMessage("I Received A Warning for Bad Language: ".. self.warnings .. " out of " .. maxwarnings)
