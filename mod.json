@@ -1,7 +1,7 @@
 {
-    "Name": "VU Clean Chat",
+    "Name": "VUCleanChat",
     "Description": "by IllustrisJack",
-    "Version": "0.0.1",
+    "Version": "1.0.0",
     "HasVeniceEXT": true,
     "Dependencies": {
         "veniceext": "^1.0.0"
