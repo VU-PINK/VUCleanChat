@@ -1,5 +1,5 @@
 # VUCleanChat
-A mod to keep the VU servers/chats clean of bad language
+A smol mod to keep the VU servers/chats clean of bad language
 
 Edit banned words in /ext/server/banned.lua
 
