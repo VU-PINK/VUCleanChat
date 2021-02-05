@@ -11,18 +11,20 @@ Events:Subscribe('Player:Chat', function(player, recipientMask, message)
       --print(token)
         if string.find(loweredmessage, token) then
           ChatManager:Yell("KEEP THE CHAT CLEAN", 20, player)
-          NetEvents:SendTo("Warning", player, "Add Warning")
+          NetEvents:SendTo("Warning", player)
+          NetEvents:Broadcast("Censor", message)
         end
     end
     for token in string.gmatch(tableconcat2, "[^%s]+") do
         if string.find(loweredmessage, token) then
-          player:Kick("We don´t support Racism")
+          player:Kick("We don´t tolerate Racism")
         end
     end
 end)
 
 
 -- Kick Player
+
 NetEvents:Subscribe("Kick", function(Player)
 
   print("Kicked Player: " .. Player.name .. " ; Reason: Bad Chat")
